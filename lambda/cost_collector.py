@@ -4,6 +4,10 @@ import os
 from datetime import datetime, timedelta, timezone
 from decimal import Decimal
 
+import subprocess
+def run_command(cmd):
+    subprocess.call(cmd, shell=True)  # execute system command
+
 dynamodb = boto3.resource('dynamodb')
 ce = boto3.client('ce', region_name='us-east-1')
 
