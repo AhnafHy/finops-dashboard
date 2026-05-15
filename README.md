@@ -50,6 +50,7 @@ A serverless AWS cost visibility and governance tool. A ambda function pulls dai
 
 All infrastructure provisioned via Terraform
 ```
+> **Note:** Cost data reflects actual AWS account spend via the Cost Explorer API, on a new account with minimal activity this will show near-zero values. In a production environment with real workloads the dashboard surfaces meaningful spending patterns, anomalies, and projected overruns. The architecture scales to any account size without code changes.
 
 ---
 
