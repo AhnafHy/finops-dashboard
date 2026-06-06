@@ -1,6 +1,6 @@
 # FinOps Cost Dashboard
 
-A serverless AWS cost visibility and governance tool. A ambda function pulls daily spending data from the Cost Explorer API and stores cost snapshots in DynamoDB, a second Lambda exposes a REST API via API Gateway to query spending by service and time range, and CloudWatch alarms fire when projected monthly spend exceeds a configurable threshold. The entire pipeline runs on a daily EventBridge schedule and is fully provisioned via Terraform.
+A serverless AWS cost visibility and governance tool. A lambda function pulls daily spending data from the Cost Explorer API and stores cost snapshots in DynamoDB, a second Lambda exposes a REST API via API Gateway to query spending by service and time range, and CloudWatch alarms fire when projected monthly spend exceeds a configurable threshold. The entire pipeline runs on a daily EventBridge schedule and is fully provisioned via Terraform.
 
 ---
 
